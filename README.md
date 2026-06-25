@@ -27,7 +27,7 @@
 
 ```
 visualtech/
-├── index.php               # Página inicial (home)
+├── index.html             # Página inicial (home)
 ├── database.sql            # Script SQL completo
 ├── .env                    # Variáveis de ambiente (NÃO versionar)
 ├── .env.example            # Modelo das variáveis de ambiente

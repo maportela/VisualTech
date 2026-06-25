@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos — VisualTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Cabeçalho da página -->
+      <div class="page-header">
+        <div class="container">
+          <nav class="breadcrumb">
+            <a href="../index.html">Home</a><span>/</span
+            ><span>Todos os Produtos</span>
+          </nav>
+          <h1>Produtos</h1>
+        </div>
+      </div>
+
+      <!-- Barra de filtros -->
+      <div class="filter-bar">
+        <div class="container">
+          <div class="filter-inner">
+            <div class="cat-strip-inner" style="flex: 1">
+              <a href="produtos.html" class="cat-pill active">Todas</a>
+              <a href="produtos.html?cat=placas-de-video" class="cat-pill"
+                ><i class="fas fa-microchip"></i> Placas de Vídeo</a
+              >
+              <a href="produtos.html?cat=processadores" class="cat-pill"
+                ><i class="fas fa-cpu"></i> Processadores</a
+              >
+              <a href="produtos.html?cat=monitores" class="cat-pill"
+                ><i class="fas fa-desktop"></i> Monitores</a
+              >
+              <a href="produtos.html?cat=teclados" class="cat-pill"
+                ><i class="fas fa-keyboard"></i> Teclados</a
+              >
+              <a href="produtos.html?cat=mouses" class="cat-pill"
+                ><i class="fas fa-computer-mouse"></i> Mouses</a
+              >
+              <a href="produtos.html?cat=headsets" class="cat-pill"
+                ><i class="fas fa-headphones"></i> Headsets</a
+              >
+              <a href="produtos.html?cat=memorias" class="cat-pill"
+                ><i class="fas fa-memory"></i> Memórias</a
+              >
+            </div>
+            <select class="filter-select">
+              <option>Destaques</option>
+              <option>Mais recentes</option>
+              <option>Menor preço</option>
+              <option>Maior preço</option>
+              <option>A-Z</option>
+            </select>
+            <span class="results-count">32 produto(s)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grade de produtos -->
+      <section class="section" style="padding-top: 36px">
+        <div class="container">
+          <div class="products-grid">
+            <!-- Produto 1 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-microchip ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">NVIDIA</span>
+                <a href="produto.html" class="product-name"
+                  >GeForce RTX 4070 Ti Super 16GB GDDR6X</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 4.799,00</div>
+                  <div class="price-install">ou 12× de R$ 399,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 2 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-22%</span>
+                <i class="fas fa-microchip ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">AMD</span>
+                <a href="produto.html" class="product-name"
+                  >Radeon RX 7800 XT 16GB GDDR6 256-bit</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 3.199,00</div>
+                  <div class="price-current">R$ 2.499,00</div>
+                  <div class="price-install">ou 12× de R$ 208,25 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 3 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-cpu ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">AMD</span>
+                <a href="produto.html" class="product-name"
+                  >Ryzen 9 7950X 16-Core 4.5GHz AM5</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 3.299,00</div>
+                  <div class="price-install">ou 12× de R$ 274,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 4 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <i class="fas fa-cpu ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Intel</span>
+                <a href="produto.html" class="product-name"
+                  >Core i9-14900K 24-Core 6.0GHz LGA1700</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 2.899,00</div>
+                  <div class="price-install">ou 12× de R$ 241,58 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 5 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-desktop ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">LG</span>
+                <a href="produto.html" class="product-name"
+                  >Monitor UltraGear 27" QHD 165Hz IPS 1ms</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.849,00</div>
+                  <div class="price-install">ou 12× de R$ 154,08 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 6 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-15%</span>
+                <i class="fas fa-desktop ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Samsung</span>
+                <a href="produto.html" class="product-name"
+                  >Odyssey G7 32" 4K 144Hz VA 1ms</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 3.499,00</div>
+                  <div class="price-current">R$ 2.974,00</div>
+                  <div class="price-install">ou 12× de R$ 247,83 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 7 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-keyboard ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Keychron</span>
+                <a href="produto.html" class="product-name"
+                  >Teclado Mecânico K8 Pro TKL RGB Switch Red</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 649,00</div>
+                  <div class="price-install">ou 12× de R$ 54,08 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 8 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-30%</span>
+                <i class="fas fa-keyboard ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Razer</span>
+                <a href="produto.html" class="product-name"
+                  >BlackWidow V4 Pro Chroma Switch Green</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 999,00</div>
+                  <div class="price-current">R$ 699,00</div>
+                  <div class="price-install">ou 12× de R$ 58,25 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 9 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-computer-mouse ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Logitech</span>
+                <a href="produto.html" class="product-name"
+                  >G Pro X Superlight 2 DEX 32000 DPI</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 749,00</div>
+                  <div class="price-install">ou 12× de R$ 62,41 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 10 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-15%</span>
+                <i class="fas fa-computer-mouse ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Razer</span>
+                <a href="produto.html" class="product-name"
+                  >DeathAdder V3 HyperSpeed 30000 DPI</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 549,00</div>
+                  <div class="price-current">R$ 467,00</div>
+                  <div class="price-install">ou 12× de R$ 38,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 11 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-headphones ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">HyperX</span>
+                <a href="produto.html" class="product-name"
+                  >Cloud Alpha Wireless 300h Battery</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 899,00</div>
+                  <div class="price-install">ou 12× de R$ 74,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 12 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-18%</span>
+                <i class="fas fa-headphones ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">SteelSeries</span>
+                <a href="produto.html" class="product-name"
+                  >Arctis Nova Pro Wireless 2.4GHz</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 1.499,00</div>
+                  <div class="price-current">R$ 1.229,00</div>
+                  <div class="price-install">ou 12× de R$ 102,41 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 13 — Esgotado -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-sem-estoque">Esgotado</span>
+                <i class="fas fa-memory ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">G.Skill</span>
+                <a href="produto.html" class="product-name"
+                  >Trident Z5 RGB DDR5 64GB 7200MHz CL34</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 2.199,00</div>
+                  <div class="price-install">ou 12× de R$ 183,25 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm"
+                    style="flex: 1"
+                  >
+                    <i class="fas fa-eye"></i> Ver produto
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 14 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-memory ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Corsair</span>
+                <a href="produto.html" class="product-name"
+                  >Vengeance DDR5 32GB (2x16) 6000MHz CL30 RGB</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.199,00</div>
+                  <div class="price-install">ou 12× de R$ 99,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 15 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <i class="fas fa-hdd ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Samsung</span>
+                <a href="produto.html" class="product-name"
+                  >SSD NVMe 990 Pro 2TB PCIe 4.0 7450MB/s</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.099,00</div>
+                  <div class="price-install">ou 12× de R$ 91,58 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Produto 16 -->
+            <article class="product-card">
+              <a href="produto.html" class="product-card-img">
+                <span class="badge-promo">-10%</span>
+                <i class="fas fa-hdd ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">WD</span>
+                <a href="produto.html" class="product-name"
+                  >Black SN850X 1TB PCIe 4.0 NVMe 7300MB/s</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 699,00</div>
+                  <div class="price-current">R$ 629,00</div>
+                  <div class="price-install">ou 12× de R$ 52,41 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="produto.html"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Paginação -->
+          <nav class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">›</a>
+          </nav>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/components.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

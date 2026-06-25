@@ -1,6 +1,6 @@
 <?php
-// includes/product-card.php — Cole em qualquer loop de produtos
-// Requer: $p = linha da tabela produtos ou vw_produtos_completo
+// includes/product-card.php (colar em qualquer loop de produtos
+// requer: $p = linha da tabela produtos ou vw_produtos_completo
 $preco     = (float)$p['preco'];
 $promo     = isset($p['preco_promocional']) && $p['preco_promocional'] ? (float)$p['preco_promocional'] : null;
 $precoShow = $promo ?? $preco;

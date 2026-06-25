@@ -1,4 +1,4 @@
-<?php // VisualTech — includes/footer.php ?>
+<?php ?>
 </main>
 <footer class="footer">
     <div class="container">

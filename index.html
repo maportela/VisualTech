@@ -1,0 +1,1610 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home — VisualTech</title>
+    <meta
+      name="description"
+      content="VisualTech — Periféricos, eletrônicos e produtos gamer. Os melhores preços em hardware e acessórios gaming."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      /* ===================== CSS (style.css) ===================== */
+      :root {
+        --bg-deep: #06090f;
+        --bg-dark: #0a0f1a;
+        --bg-card: #0f1623;
+        --bg-card2: #141d2e;
+        --bg-input: #111827;
+        --bg-hover: #1a2336;
+        --border: #1c2a3e;
+        --border-md: #233044;
+        --border-lt: #2d3f58;
+        --cyan: #00d4ff;
+        --cyan-dim: #00aacc;
+        --cyan-dark: #007a99;
+        --cyan-glow: rgba(0, 212, 255, 0.12);
+        --cyan-glow2: rgba(0, 212, 255, 0.06);
+        --amber: #f59e0b;
+        --amber-dim: #d97706;
+        --amber-glow: rgba(245, 158, 11, 0.12);
+        --red: #ef4444;
+        --red-glow: rgba(239, 68, 68, 0.12);
+        --green: #10b981;
+        --green-glow: rgba(16, 185, 129, 0.12);
+        --purple: #8b5cf6;
+        --text-1: #edf2f7;
+        --text-2: #94a3b8;
+        --text-3: #4a5568;
+        --text-4: #2d3748;
+        --r-sm: 4px;
+        --r-md: 8px;
+        --r-lg: 12px;
+        --r-xl: 16px;
+        --r-2xl: 20px;
+        --t: all 0.2s ease;
+        --t-slow: all 0.35s ease;
+        --shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        --shadow-cyan:
+          0 0 24px rgba(0, 212, 255, 0.18), 0 4px 12px rgba(0, 0, 0, 0.4);
+        --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.4);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        font-family: "Inter", system-ui, sans-serif;
+        background: var(--bg-deep);
+        color: var(--text-1);
+        font-size: 15px;
+        line-height: 1.65;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      main {
+        flex: 1;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+        transition: var(--t);
+      }
+      img {
+        max-width: 100%;
+        display: block;
+      }
+      button {
+        cursor: pointer;
+        font-family: inherit;
+        border: none;
+      }
+      input,
+      select,
+      textarea,
+      button {
+        font-family: inherit;
+        font-size: inherit;
+      }
+      ul,
+      ol {
+        list-style: none;
+      }
+      .container {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+      .container-sm {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      /* Header */
+      .header {
+        position: sticky;
+        top: 0;
+        z-index: 900;
+        background: rgba(6, 9, 15, 0.96);
+        border-bottom: 1px solid var(--border);
+        backdrop-filter: blur(16px);
+      }
+      .header .container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        height: 66px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+      }
+      .logo-vt {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        background: var(--cyan);
+        color: var(--bg-deep);
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(7px 0%, 100% 0%, calc(100% - 7px) 100%, 0% 100%);
+      }
+      .logo-text {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        color: var(--text-1);
+        display: flex;
+        align-items: center;
+      }
+      .logo-text strong {
+        color: var(--cyan);
+        font-weight: 700;
+      }
+      .nav-cats {
+        display: flex;
+        gap: 2px;
+        flex: 1;
+      }
+      .nav-cats a {
+        padding: 6px 11px;
+        border-radius: var(--r-sm);
+        font-size: 12.5px;
+        font-weight: 600;
+        color: var(--text-2);
+        text-transform: uppercase;
+        letter-spacing: 0.6px;
+        white-space: nowrap;
+        transition: var(--t);
+      }
+      .nav-cats a:hover,
+      .nav-cats a.active {
+        color: var(--cyan);
+        background: var(--cyan-glow);
+      }
+      .nav-cats .all-link {
+        color: var(--cyan);
+      }
+      .header-search {
+        flex: 0 0 280px;
+      }
+      .header-search form {
+        display: flex;
+        width: 100%;
+        background: var(--bg-input);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        overflow: hidden;
+        transition: var(--t);
+      }
+      .header-search form:focus-within {
+        border-color: var(--cyan);
+        box-shadow: 0 0 0 3px var(--cyan-glow);
+      }
+      .header-search input {
+        flex: 1;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 9px 14px;
+        color: var(--text-1);
+        font-size: 13px;
+      }
+      .header-search input::placeholder {
+        color: var(--text-3);
+      }
+      .header-search button {
+        background: none;
+        padding: 9px 14px;
+        color: var(--text-2);
+      }
+      .header-search button:hover {
+        color: var(--cyan);
+      }
+      .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        flex-shrink: 0;
+      }
+      .btn-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 7px 12px;
+        border-radius: var(--r-md);
+        color: var(--text-2);
+        transition: var(--t);
+        position: relative;
+      }
+      .btn-icon i {
+        font-size: 17px;
+      }
+      .btn-icon-label {
+        font-size: 10.5px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      .btn-icon:hover {
+        color: var(--cyan);
+        background: var(--cyan-glow);
+      }
+      .cart-badge {
+        position: absolute;
+        top: 3px;
+        right: 5px;
+        background: var(--cyan);
+        color: var(--bg-deep);
+        font-size: 9.5px;
+        font-weight: 700;
+        min-width: 17px;
+        height: 17px;
+        border-radius: 9px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 4px;
+      }
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        padding: 8px;
+        border-radius: var(--r-md);
+      }
+      .menu-toggle span {
+        display: block;
+        width: 22px;
+        height: 2px;
+        background: var(--text-2);
+        border-radius: 2px;
+        transition: var(--t);
+      }
+      .menu-toggle.open span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+      .menu-toggle.open span:nth-child(2) {
+        opacity: 0;
+      }
+      .menu-toggle.open span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+      .mobile-nav {
+        background: var(--bg-dark);
+        border-top: 1px solid var(--border);
+      }
+      .mobile-nav[hidden] {
+        display: none;
+      }
+      .mobile-nav-inner {
+        padding: 16px 0 20px;
+      }
+      .mobile-search {
+        display: flex;
+        margin: 0 20px 16px;
+        background: var(--bg-input);
+        border: 1px solid var(--border);
+        border-radius: var(--r-lg);
+        overflow: hidden;
+      }
+      .mobile-search input {
+        flex: 1;
+        background: none;
+        border: none;
+        outline: none;
+        padding: 10px 14px;
+        color: var(--text-1);
+        font-size: 14px;
+      }
+      .mobile-search button {
+        background: none;
+        padding: 10px 14px;
+        color: var(--text-2);
+      }
+      .mobile-nav-section {
+        margin-bottom: 8px;
+      }
+      .mobile-nav-title {
+        display: block;
+        font-size: 10px;
+        font-weight: 700;
+        color: var(--text-3);
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 8px 20px 6px;
+      }
+      .mobile-nav a {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 11px 20px;
+        color: var(--text-2);
+        font-size: 14.5px;
+      }
+      .mobile-nav a i {
+        width: 18px;
+        text-align: center;
+        color: var(--cyan);
+      }
+      .mobile-nav a:hover {
+        color: var(--text-1);
+        background: var(--bg-hover);
+      }
+
+      /* Botões */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 11px 24px;
+        border-radius: var(--r-lg);
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        transition: var(--t);
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 1.3;
+      }
+      .btn:active {
+        transform: scale(0.98);
+      }
+      .btn-sm {
+        padding: 8px 18px;
+        font-size: 13px;
+      }
+      .btn-lg {
+        padding: 14px 32px;
+        font-size: 16px;
+      }
+      .btn-primary {
+        background: var(--cyan);
+        color: var(--bg-deep);
+        border-color: var(--cyan);
+      }
+      .btn-primary:hover {
+        background: var(--cyan-dim);
+        border-color: var(--cyan-dim);
+        transform: translateY(-1px);
+        box-shadow: var(--shadow-cyan);
+      }
+      .btn-outline {
+        background: transparent;
+        color: var(--cyan);
+        border-color: var(--cyan);
+      }
+      .btn-outline:hover {
+        background: var(--cyan-glow);
+      }
+      .btn-ghost {
+        background: var(--bg-card2);
+        color: var(--text-2);
+        border-color: var(--border-md);
+      }
+      .btn-ghost:hover {
+        border-color: var(--border-lt);
+        color: var(--text-1);
+      }
+      .btn-icon-only {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border-radius: var(--r-md);
+      }
+
+      /* Seções */
+      .section {
+        padding: 64px 0;
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 36px;
+        gap: 20px;
+      }
+      .section-title {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: var(--text-1);
+        white-space: nowrap;
+      }
+      .section-title span {
+        color: var(--cyan);
+      }
+      .section-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(to right, var(--border-lt), transparent);
+      }
+
+      /* Hero */
+      .hero {
+        background: var(--bg-dark);
+        border-bottom: 1px solid var(--border);
+        overflow: hidden;
+        position: relative;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          ellipse 60% 80% at 70% 50%,
+          rgba(0, 212, 255, 0.06) 0%,
+          transparent 70%
+        );
+        pointer-events: none;
+      }
+      .hero-inner {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        min-height: 500px;
+        position: relative;
+        z-index: 1;
+      }
+      .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 64px 56px 64px 0;
+        gap: 0;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: var(--cyan-glow2);
+        border: 1px solid rgba(0, 212, 255, 0.25);
+        color: var(--cyan);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 5px 14px;
+        border-radius: 20px;
+        margin-bottom: 22px;
+        width: fit-content;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+      .hero-tag i {
+        font-size: 10px;
+      }
+      .hero-title {
+        font-family: "Rajdhani", sans-serif;
+        font-size: clamp(34px, 4.5vw, 56px);
+        font-weight: 700;
+        line-height: 1.08;
+        color: var(--text-1);
+        margin-bottom: 18px;
+      }
+      .hero-title .accent {
+        color: var(--cyan);
+      }
+      .hero-desc {
+        font-size: 15px;
+        color: var(--text-2);
+        margin-bottom: 32px;
+        max-width: 430px;
+        line-height: 1.75;
+      }
+      .hero-actions {
+        display: flex;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+      .hero-visual {
+        background: var(--bg-card);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+      }
+      .hero-visual::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(
+          circle at 55% 45%,
+          rgba(0, 212, 255, 0.1) 0%,
+          transparent 60%
+        );
+      }
+      .hero-visual-icon {
+        font-size: 140px;
+        color: var(--border-lt);
+        opacity: 0.5;
+        position: relative;
+        z-index: 1;
+        filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.15));
+      }
+      .hero-badges {
+        display: flex;
+        gap: 12px;
+        margin-top: 40px;
+        padding-top: 32px;
+        border-top: 1px solid var(--border);
+      }
+      .hero-badge {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 13px;
+        color: var(--text-2);
+      }
+      .hero-badge i {
+        color: var(--cyan);
+        font-size: 15px;
+      }
+
+      /* Categorias strip */
+      .cat-strip {
+        background: var(--bg-card);
+        border-bottom: 1px solid var(--border);
+        padding: 18px 0;
+      }
+      .cat-strip-inner {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        padding-bottom: 2px;
+      }
+      .cat-strip-inner::-webkit-scrollbar {
+        display: none;
+      }
+      .cat-pill {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 18px;
+        background: var(--bg-card2);
+        border: 1px solid var(--border);
+        border-radius: 24px;
+        color: var(--text-2);
+        font-size: 13px;
+        font-weight: 500;
+        white-space: nowrap;
+        transition: var(--t);
+        flex-shrink: 0;
+      }
+      .cat-pill i {
+        font-size: 14px;
+      }
+      .cat-pill:hover,
+      .cat-pill.active {
+        border-color: var(--cyan);
+        color: var(--cyan);
+        background: var(--cyan-glow);
+      }
+
+      /* Product cards */
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 20px;
+      }
+      .product-card {
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: var(--r-xl);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        transition: var(--t-slow);
+        position: relative;
+      }
+      .product-card:hover {
+        border-color: rgba(0, 212, 255, 0.5);
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-cyan);
+      }
+      .product-card-img {
+        aspect-ratio: 1;
+        background: var(--bg-card2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+      }
+      .product-card-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.45s ease;
+      }
+      .product-card:hover .product-card-img img {
+        transform: scale(1.06);
+      }
+      .product-card-img .ph-icon {
+        font-size: 72px;
+        color: var(--border-lt);
+      }
+      .badge-promo {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: var(--amber);
+        color: var(--bg-deep);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 9px;
+        border-radius: var(--r-sm);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        z-index: 2;
+      }
+      .badge-destaque {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: var(--cyan);
+        color: var(--bg-deep);
+        font-size: 11px;
+        font-weight: 700;
+        padding: 3px 9px;
+        border-radius: var(--r-sm);
+        text-transform: uppercase;
+        z-index: 2;
+      }
+      .product-card-body {
+        padding: 16px 18px 18px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 7px;
+      }
+      .product-brand {
+        font-size: 10.5px;
+        font-weight: 700;
+        color: var(--cyan);
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+      }
+      .product-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--text-1);
+        line-height: 1.4;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .product-price {
+        margin-top: 4px;
+      }
+      .price-original {
+        font-size: 12px;
+        color: var(--text-3);
+        text-decoration: line-through;
+        margin-bottom: 2px;
+      }
+      .price-current {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--cyan);
+        line-height: 1;
+      }
+      .price-install {
+        font-size: 11.5px;
+        color: var(--text-2);
+        margin-top: 3px;
+      }
+      .product-card-actions {
+        display: flex;
+        gap: 8px;
+        margin-top: 6px;
+      }
+
+      /* Footer */
+      .footer {
+        background: var(--bg-card);
+        border-top: 1px solid var(--border);
+        margin-top: auto;
+      }
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+        gap: 48px;
+        padding: 56px 0 40px;
+      }
+      .footer-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+      }
+      .footer-logo {
+        margin-bottom: 14px;
+      }
+      .footer-brand p {
+        color: var(--text-2);
+        font-size: 13.5px;
+        line-height: 1.7;
+        max-width: 270px;
+      }
+      .footer-social {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      .footer-social a {
+        width: 36px;
+        height: 36px;
+        background: var(--bg-card2);
+        border: 1px solid var(--border);
+        border-radius: var(--r-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-2);
+        font-size: 14px;
+        transition: var(--t);
+      }
+      .footer-social a:hover {
+        border-color: var(--cyan);
+        color: var(--cyan);
+      }
+      .footer-links h4 {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--text-1);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 14px;
+      }
+      .footer-links a {
+        display: block;
+        color: var(--text-2);
+        font-size: 13.5px;
+        margin-bottom: 9px;
+      }
+      .footer-links a:hover {
+        color: var(--cyan);
+        padding-left: 4px;
+      }
+      .footer-payment {
+        display: flex;
+        gap: 10px;
+        margin-top: 18px;
+        font-size: 22px;
+        color: var(--text-3);
+        flex-wrap: wrap;
+      }
+      .footer-bottom {
+        border-top: 1px solid var(--border);
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer-bottom p {
+        color: var(--text-3);
+        font-size: 13px;
+        margin-bottom: 4px;
+      }
+
+      /* Responsive */
+      @media (max-width: 1100px) {
+        .hero-inner {
+          grid-template-columns: 1fr;
+        }
+        .hero-visual {
+          display: none;
+        }
+        .hero-content {
+          padding: 56px 0;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr 1fr;
+          gap: 32px;
+        }
+      }
+      @media (max-width: 768px) {
+        .nav-cats,
+        .header-search {
+          display: none;
+        }
+        .menu-toggle {
+          display: flex;
+        }
+        .products-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+        }
+        .footer-grid {
+          grid-template-columns: 1fr;
+          gap: 28px;
+        }
+        .section {
+          padding: 44px 0;
+        }
+        .hero-badges {
+          flex-wrap: wrap;
+          gap: 16px;
+        }
+      }
+      @media (max-width: 480px) {
+        .container {
+          padding: 0 16px;
+        }
+        .products-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+        }
+        .product-card-body {
+          padding: 12px 14px 14px;
+        }
+        .price-current {
+          font-size: 18px;
+        }
+        .hero-title {
+          font-size: 30px;
+        }
+        .hero-actions {
+          flex-direction: column;
+        }
+        .hero-actions .btn {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header" id="header">
+      <div class="container">
+        <a
+          href="index.html"
+          class="logo"
+          aria-label="VisualTech - Página Inicial"
+        >
+          <span class="logo-vt" aria-hidden="true">VT</span>
+          <span class="logo-text">Visual<strong>Tech</strong></span>
+        </a>
+
+        <nav class="nav-cats" aria-label="Categorias">
+          <a href="#">GPUs</a>
+          <a href="#">CPUs</a>
+          <a href="#">Monitores</a>
+          <a href="#">Teclados</a>
+          <a href="#">Mouses</a>
+          <a href="#">Headsets</a>
+          <a href="#" class="all-link">Ver Tudo</a>
+        </nav>
+
+        <div class="header-search">
+          <form action="#" role="search">
+            <input
+              type="text"
+              name="q"
+              placeholder="Buscar produtos, marcas..."
+              autocomplete="off"
+              aria-label="Buscar produtos"
+            />
+            <button type="submit" aria-label="Buscar">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="btn-icon" title="Entrar / Cadastrar">
+            <i class="fas fa-user"></i>
+            <span class="btn-icon-label">Entrar</span>
+          </a>
+          <a href="#" class="btn-icon btn-cart" title="Carrinho">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="mobileNav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile" hidden>
+        <div class="mobile-nav-inner">
+          <form action="#" class="mobile-search">
+            <input
+              type="text"
+              name="q"
+              placeholder="Buscar..."
+              autocomplete="off"
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="mobile-nav-section">
+            <span class="mobile-nav-title">Categorias</span>
+            <a href="#"><i class="fas fa-microchip"></i> Placas de Vídeo</a>
+            <a href="#"><i class="fas fa-cpu"></i> Processadores</a>
+            <a href="#"><i class="fas fa-desktop"></i> Monitores</a>
+            <a href="#"><i class="fas fa-keyboard"></i> Teclados</a>
+            <a href="#"><i class="fas fa-computer-mouse"></i> Mouses</a>
+            <a href="#"><i class="fas fa-headphones"></i> Headsets</a>
+            <a href="#"><i class="fas fa-th-large"></i> Ver Todos</a>
+          </div>
+          <div class="mobile-nav-section">
+            <span class="mobile-nav-title">Conta</span>
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+            <a href="#"><i class="fas fa-user-plus"></i> Cadastrar</a>
+            <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho (0)</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- ==================== HERO ==================== -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-inner">
+            <div class="hero-content">
+              <div class="hero-tag">
+                <i class="fas fa-bolt"></i> Lançamentos &amp; Promoções
+              </div>
+              <h1 class="hero-title">
+                Eleve seu<br />
+                <span class="accent">setup</span> ao<br />
+                próximo nível
+              </h1>
+              <p class="hero-desc">
+                Periféricos, eletrônicos e produtos gamer com os melhores
+                preços. Frete grátis acima de R$ 299 e parcelamento em até 12×.
+              </p>
+              <div class="hero-actions">
+                <a href="#catalogo" class="btn btn-primary btn-lg">
+                  <i class="fas fa-th-large"></i> Ver Catálogo
+                </a>
+                <a href="#gpus" class="btn btn-outline btn-lg">
+                  <i class="fas fa-microchip"></i> GPUs
+                </a>
+              </div>
+              <div class="hero-badges">
+                <div class="hero-badge">
+                  <i class="fas fa-truck"></i> Frete grátis acima de R$ 299
+                </div>
+                <div class="hero-badge">
+                  <i class="fas fa-shield-halved"></i> Compra 100% segura
+                </div>
+                <div class="hero-badge">
+                  <i class="fas fa-rotate-left"></i> Troca em 30 dias
+                </div>
+              </div>
+            </div>
+            <div class="hero-visual">
+              <i class="fas fa-desktop hero-visual-icon"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CATEGORIAS STRIP ==================== -->
+      <div class="cat-strip">
+        <div class="container">
+          <div class="cat-strip-inner">
+            <a href="#catalogo" class="cat-pill active"
+              ><i class="fas fa-th-large"></i> Todos</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-microchip"></i> Placas de Vídeo</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-cpu"></i> Processadores</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-desktop"></i> Monitores</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-keyboard"></i> Teclados</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-computer-mouse"></i> Mouses</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-headphones"></i> Headsets</a
+            >
+            <a href="#" class="cat-pill"
+              ><i class="fas fa-memory"></i> Memórias RAM</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== DESTAQUES ==================== -->
+      <section class="section" id="catalogo">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title"><span>Destaques</span> da Semana</h2>
+            <div class="section-line"></div>
+            <a href="#" class="btn btn-ghost btn-sm">Ver todos →</a>
+          </div>
+          <div class="products-grid">
+            <!-- Card 1 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-microchip ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">NVIDIA</span>
+                <a href="#" class="product-name"
+                  >GeForce RTX 4070 Ti Super 16GB GDDR6X</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 4.799,00</div>
+                  <div class="price-install">ou 12× de R$ 399,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-cpu ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">AMD</span>
+                <a href="#" class="product-name"
+                  >Ryzen 9 7950X 16-Core 4.5GHz AM5</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 3.299,00</div>
+                  <div class="price-install">ou 12× de R$ 274,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-desktop ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">LG</span>
+                <a href="#" class="product-name"
+                  >Monitor UltraGear 27" QHD 165Hz IPS 1ms</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.849,00</div>
+                  <div class="price-install">ou 12× de R$ 154,08 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-keyboard ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Keychron</span>
+                <a href="#" class="product-name"
+                  >Teclado Mecânico K8 Pro TKL RGB Switch Red</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 649,00</div>
+                  <div class="price-install">ou 12× de R$ 54,08 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-headphones ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">HyperX</span>
+                <a href="#" class="product-name"
+                  >Headset Cloud Alpha Wireless 300h Battery</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 899,00</div>
+                  <div class="price-install">ou 12× de R$ 74,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-computer-mouse ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Logitech</span>
+                <a href="#" class="product-name"
+                  >Mouse G Pro X Superlight 2 DEX 32000 DPI</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 749,00</div>
+                  <div class="price-install">ou 12× de R$ 62,41 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-memory ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Corsair</span>
+                <a href="#" class="product-name"
+                  >Memória DDR5 32GB (2x16) 6000MHz CL30 RGB</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.199,00</div>
+                  <div class="price-install">ou 12× de R$ 99,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-destaque">Destaque</span>
+                <i class="fas fa-hdd ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Samsung</span>
+                <a href="#" class="product-name"
+                  >SSD NVMe 990 Pro 2TB PCIe 4.0 7450MB/s</a
+                >
+                <div class="product-price">
+                  <div class="price-current">R$ 1.099,00</div>
+                  <div class="price-install">ou 12× de R$ 91,58 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BANNER INFO ==================== -->
+      <section
+        style="
+          background: var(--bg-card);
+          border-top: 1px solid var(--border);
+          border-bottom: 1px solid var(--border);
+          padding: 40px 0;
+        "
+      >
+        <div class="container">
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(4, 1fr);
+              gap: 24px;
+              text-align: center;
+            "
+          >
+            <div style="padding: 20px">
+              <i
+                class="fas fa-truck"
+                style="
+                  font-size: 28px;
+                  color: var(--cyan);
+                  margin-bottom: 12px;
+                  display: block;
+                "
+              ></i>
+              <strong
+                style="
+                  font-family: &quot;Rajdhani&quot;, sans-serif;
+                  font-size: 16px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >Frete Grátis</strong
+              >
+              <span style="font-size: 13px; color: var(--text-2)"
+                >Compras acima de R$ 299</span
+              >
+            </div>
+            <div style="padding: 20px">
+              <i
+                class="fas fa-credit-card"
+                style="
+                  font-size: 28px;
+                  color: var(--cyan);
+                  margin-bottom: 12px;
+                  display: block;
+                "
+              ></i>
+              <strong
+                style="
+                  font-family: &quot;Rajdhani&quot;, sans-serif;
+                  font-size: 16px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >12x sem juros</strong
+              >
+              <span style="font-size: 13px; color: var(--text-2)"
+                >Nos principais cartões</span
+              >
+            </div>
+            <div style="padding: 20px">
+              <i
+                class="fas fa-shield-halved"
+                style="
+                  font-size: 28px;
+                  color: var(--cyan);
+                  margin-bottom: 12px;
+                  display: block;
+                "
+              ></i>
+              <strong
+                style="
+                  font-family: &quot;Rajdhani&quot;, sans-serif;
+                  font-size: 16px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >Compra Protegida</strong
+              >
+              <span style="font-size: 13px; color: var(--text-2)"
+                >Site seguro com criptografia</span
+              >
+            </div>
+            <div style="padding: 20px">
+              <i
+                class="fas fa-rotate-left"
+                style="
+                  font-size: 28px;
+                  color: var(--cyan);
+                  margin-bottom: 12px;
+                  display: block;
+                "
+              ></i>
+              <strong
+                style="
+                  font-family: &quot;Rajdhani&quot;, sans-serif;
+                  font-size: 16px;
+                  display: block;
+                  margin-bottom: 4px;
+                "
+                >Troca Fácil</strong
+              >
+              <span style="font-size: 13px; color: var(--text-2)"
+                >30 dias para devolver</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROMOÇÕES ==================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title"><span>Promoções</span> Imperdíveis</h2>
+            <div class="section-line"></div>
+            <a href="#" class="btn btn-ghost btn-sm">Ver todas →</a>
+          </div>
+          <div class="products-grid">
+            <!-- Promo 1 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-promo">-22%</span>
+                <i class="fas fa-microchip ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">AMD</span>
+                <a href="#" class="product-name"
+                  >Radeon RX 7800 XT 16GB GDDR6 256-bit</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 3.199,00</div>
+                  <div class="price-current">R$ 2.499,00</div>
+                  <div class="price-install">ou 12× de R$ 208,25 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Promo 2 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-promo">-18%</span>
+                <i class="fas fa-headphones ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">SteelSeries</span>
+                <a href="#" class="product-name"
+                  >Headset Arctis Nova Pro Wireless 2.4GHz</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 1.499,00</div>
+                  <div class="price-current">R$ 1.229,00</div>
+                  <div class="price-install">ou 12× de R$ 102,41 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Promo 3 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-promo">-30%</span>
+                <i class="fas fa-keyboard ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Razer</span>
+                <a href="#" class="product-name"
+                  >Teclado BlackWidow V4 Pro Chroma Switch Green</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 999,00</div>
+                  <div class="price-current">R$ 699,00</div>
+                  <div class="price-install">ou 12× de R$ 58,25 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Promo 4 -->
+            <article class="product-card">
+              <a href="#" class="product-card-img">
+                <span class="badge-promo">-15%</span>
+                <i class="fas fa-computer-mouse ph-icon"></i>
+              </a>
+              <div class="product-card-body">
+                <span class="product-brand">Razer</span>
+                <a href="#" class="product-name"
+                  >Mouse DeathAdder V3 HyperSpeed 30000 DPI</a
+                >
+                <div class="product-price">
+                  <div class="price-original">R$ 549,00</div>
+                  <div class="price-current">R$ 467,00</div>
+                  <div class="price-install">ou 12× de R$ 38,91 sem juros</div>
+                </div>
+                <div class="product-card-actions">
+                  <button class="btn btn-primary btn-sm" style="flex: 1">
+                    <i class="fas fa-cart-plus"></i> Adicionar
+                  </button>
+                  <a
+                    href="#"
+                    class="btn btn-ghost btn-sm btn-icon-only"
+                    title="Ver detalhes"
+                    ><i class="fas fa-eye"></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo footer-logo">
+              <span class="logo-vt">VT</span>
+              <span class="logo-text">Visual<strong>Tech</strong></span>
+            </a>
+            <p>A melhor loja de periféricos, eletrônicos e produtos gamer.</p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-x-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Categorias</h4>
+            <a href="#">Placas de Vídeo</a>
+            <a href="#">Processadores</a>
+            <a href="#">Monitores</a>
+            <a href="#">Teclados</a>
+            <a href="#">Mouses</a>
+            <a href="#">Headsets</a>
+          </div>
+          <div class="footer-links">
+            <h4>Minha Conta</h4>
+            <a href="#">Entrar</a>
+            <a href="#">Criar Conta</a>
+            <a href="#">Meus Pedidos</a>
+            <a href="#">Carrinho</a>
+          </div>
+          <div class="footer-links">
+            <h4>Atendimento</h4>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Política de Trocas</a>
+            <a href="#">Fale Conosco</a>
+            <div class="footer-payment">
+              <i class="fab fa-cc-visa"></i>
+              <i class="fab fa-cc-mastercard"></i>
+              <i class="fas fa-barcode"></i>
+              <i class="fab fa-pix"></i>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 VisualTech. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      const toggle = document.getElementById("menuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      toggle.addEventListener("click", () => {
+        const isOpen = !mobileNav.hidden;
+        mobileNav.hidden = isOpen;
+        toggle.setAttribute("aria-expanded", String(!isOpen));
+        toggle.classList.toggle("open", !isOpen);
+      });
+    </script>
+  </body>
+</html>
